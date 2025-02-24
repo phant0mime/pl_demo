@@ -4,5 +4,15 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-bevy = "0.15.2"
+bevy = { version = "0.15.2", default-features = false, features = [
+    "bevy_winit",
+    "bevy_render",
+    "bevy_pbr",
+    "bevy_asset",
+    "bevy_gltf"
+] }
 bevy_flycam = "0.15.0"
+
+[profile.release]
+lto = true
+opt-level = "z"  # or "s" for size/speed balance
