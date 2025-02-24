@@ -29,7 +29,7 @@ fn load_museum(
     // Start loading the assets.
     commands.insert_resource(MuseumAssets {
         is_loaded: false,
-        handle: SceneRoot(asset_server.load(GltfAssetLabel::Scene(0).from_asset("assets/models/museum.glb"))),
+        handle: SceneRoot(asset_server.load(GltfAssetLabel::Scene(0).from_asset("models/museum.glb"))),
     });
 
 }

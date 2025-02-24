@@ -9,7 +9,10 @@ bevy = { version = "0.15.2", default-features = false, features = [
     "bevy_render",
     "bevy_pbr",
     "bevy_asset",
-    "bevy_gltf"
+    "bevy_gltf",
+    "tonemapping_luts",
+    "png",
+    "webgpu"
 ] }
 bevy_flycam = "0.15.0"
 
